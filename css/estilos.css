@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Dancing+Script:wght@700&family=Delicious+Handrawn&family=Farsan&family=Geologica:wght@300&family=Josefin+Sans:wght@100;500&family=Lato&family=Montserrat:ital,wght@1,100&family=Open+Sans:wght@300&family=Oswald:wght@300;400;700&family=Poppins:ital,wght@1,300&family=Raleway:ital,wght@0,100;1,100&family=Roboto:ital,wght@0,100;0,900;1,300&family=Sigmar&family=Smokum&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: rgba(255, 166, 0, 0.592);
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 20px;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.logo span {
+    color: #000;
+    text-align: end;
+}
+
+.barra a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos del cuerpo */
+main {
+    height: calc(75vh - 80px);
+    background-color: #333;
+    background-size: cover;
+    background-image: url(../img/platovoltri.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid orange;
+    box-shadow: 2px 2px 5px #fff;
+    max-width: 800px;
+}
+
+.call h1 {
+    color: rgba(220, 8, 8, 0.629) !important;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px #000;
+    font-weight: bold;
+}
+
+.call p {
+    margin-bottom: 20px;
+}
+
+/* Estilos de la sección de reserva */
+h2 {
+    background-color: rgba(255, 166, 0, 0.388);
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+section {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    flex-flow: column-reverse;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+label {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.div-resto {
+    background-color: rgba(253, 224, 171, 0.741);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    border-color: whitesmoke;
+    box-shadow: 26px 28px 15px -8px rgba(0, 0, 0, 0.15);
+    border-radius: 0.7rem;
+}
+
+/* Estilos de los elementos de entrada */
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos del botón "Generar Total" */
+.button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos del icono "Guardar" */
+.guardar {
+    border: 1px transparent;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.guardar:hover {
+    background-color: rgba(255, 166, 0, 0.388);
+}
+
+.guardar:active {
+    background-color: black !important;
+}
+
+/* Estilos de los mensajes de importe */
+.importe {
+    color: black;
+    font-size: x-large;
+    font-weight: 700;
+    background-color: coral;
+}
+
+/* Estilo para el cuadro de diálogo de sweetalert2 */
+
+.swal2-popup {
+    border-radius: 10px; /* Borde redondeado */
+    font-family: sans-serif;
+    border: 4px solid goldenrod;
+    box-shadow: 4px 4px 10px #000000; /* Tipo de fuente */
+}
+
+/* Estilo para el texto del SweetAlert */
+.swal2-title, .swal2-content {
+    font-size: 18px;
+    font-family: sans-serif;
+     /* Tamaño de fuente */
+}
+
+/* Estilo para el botón de confirmación del SweetAlert */
+.swal2-confirm {
+    background-color: rgba(187, 123, 3, 0.388) !important; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Borde redondeado */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    text-align: center !important;
+}
+
+/* Estilo para el botón de cancelación del SweetAlert */
+.swal2-cancel {
+    background-color: rgba(187, 123, 3, 0.388); /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Borde redondeado */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    text-align: center !important;
+}
