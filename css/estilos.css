@@ -142,24 +142,30 @@ input {
     background-color: #45a049;
 }
 
-/* Estilos del icono "Guardar" */
-.guardar {
-    border: 1px transparent;
-    border-radius: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 20px;
-    font-size: 4rem;
-    cursor: pointer;
+#btnConfirmarReserva { 
+    background-color: rgba(187, 123, 3, 0.388) !important; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Borde redondeado */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    text-align: center !important;}
+
+    #btnConfirmarReserva:hover {
+    color: rgb(255, 231, 172);
+    }
+
+.contenedor {
+    text-align: center;
 }
 
-.guardar:hover {
-    background-color: rgba(255, 166, 0, 0.388);
-}
-
-.guardar:active {
-    background-color: black !important;
-}
+.div-confirmacion {
+    background-color: rgba(253, 224, 171, 0.741);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    border-color: whitesmoke;
+    box-shadow: 26px 28px 15px -8px rgba(0, 0, 0, 0.15);
+    border-radius: 0.7rem;}
 
 /* Estilos de los mensajes de importe */
 .importe {
